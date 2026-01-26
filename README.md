@@ -1,26 +1,7 @@
-Possible future improvements. We're NOT addressing these now.
+# birkin_coding_tools README
 
-### Worksheet selection is underspecified
+This is a collection of coding tools I use very frequently. 
 
-The experiment uses `worksheets()[0]`. That’s fine for a demo, but brittle for a production-ish script.
+Also see <https://github.com/Brown-University-Library/django_template_52_project> for a complete Django project template.
 
-**Missing decisions:**
-
-- Should the script always write to the first worksheet?
-- Should it target a worksheet by name (e.g. `GSHEET_WORKSHEET_NAME`)?
-- Should it create the worksheet if it doesn’t exist?
-
-**Suggestion:** Add `GSHEET_WORKSHEET_NAME` (optional; default to first worksheet) so the update target is explicit.
-
-### Large update limits and chunking aren’t addressed
-
-Google Sheets API has payload / cell update limits. A single `worksheet.update(rows, 'A1')` can fail if the dataset is large.
-
-**Suggestion:** Plan for chunked writes if the cell count is beyond a threshold.
-
-- Example approach:
-  - `worksheet.clear()` once
-  - then write in chunks of N rows via successive `update()` calls
-  - (still “batchy” compared to per-cell writes, but avoids request-size failures)
-
-Even if you *don’t implement chunking initially*, at least record this as a known risk.
+---
