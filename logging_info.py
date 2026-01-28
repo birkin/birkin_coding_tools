@@ -1,3 +1,28 @@
+import logging
+import os  # not used -- just avoiding linter-irritation
+
+## basic logging ---------------------------------------------------
+
+"""
+From a `main.py` file, somewhere near the top.
+- Shows the logging `format` I really like.
+- Shows optional file-logging.
+"""
+
+# log_dir: Path = stuff_dir / 'logs'
+# log_dir.mkdir(parents=True, exist_ok=True)  # creates the log-directory inside the stuff-directory if it doesn't exist
+# log_file_path: Path = log_dir / 'auto_updater.log'
+logging.basicConfig(
+    level=logging.DEBUG,
+    format='[%(asctime)s] %(levelname)s [%(module)s-%(funcName)s()::%(lineno)d] %(message)s',
+    datefmt='%d/%b/%Y %H:%M:%S',
+    # filename=log_file_path,
+)
+log = logging.getLogger(__name__)
+
+
+## django logging ---------------------------------------------------
+
 """
 From a django settings.py file, the public-repo settings.
 
@@ -9,8 +34,6 @@ Also:
 - Shows a good use of `environ.get()` (I normally _really_ prefer quick-failing `environ['FOO']`).
 - Includes reminder of cool inspectable sql-output.
 """
-
-import os  # not used -- just avoiding linter-irritation
 
 ## reminder:
 ## "Each 'logger' will pass messages above its log-level to its associated 'handlers',
