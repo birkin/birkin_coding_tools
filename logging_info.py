@@ -6,6 +6,7 @@ import os  # not used -- just avoiding linter-irritation
 """
 From a `main.py` file, somewhere near the top.
 - Shows the logging `format` I really like.
+- Shows a clean way to default the log-level to INFO if LOG_LEVEL is not `DEBUG`.
 - Shows optional file-logging.
 """
 
@@ -13,7 +14,7 @@ From a `main.py` file, somewhere near the top.
 # log_dir.mkdir(parents=True, exist_ok=True)  # creates the log-directory inside the stuff-directory if it doesn't exist
 # log_file_path: Path = log_dir / 'auto_updater.log'
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.DEBUG if os.getenv('LOG_LEVEL') == 'DEBUG' else logging.INFO,
     format='[%(asctime)s] %(levelname)s [%(module)s-%(funcName)s()::%(lineno)d] %(message)s',
     datefmt='%d/%b/%Y %H:%M:%S',
     # filename=log_file_path,
