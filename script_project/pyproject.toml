@@ -1,12 +1,10 @@
 [project]
-name = "jira-stories-export-script"
+name = "script-project-template"
 version = "0.0.0"
-description = "Exports Jira stories to a CSV file."
-readme = "https://github.com/Brown-University-Library/jira_stories_export_script/blob/main/README.md"
+description = "A template for python scripts."
+readme = "coming"
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "gspread~=6.2.0",
-    "google-auth~=2.47.0",
     "httpx~=0.28.0",
     "python-dotenv~=1.2.0",
     "trio~=0.32.0",
