@@ -16,3 +16,6 @@ dependencies = [
 local = []
 staging = []
 prod = []
+
+[tool.uv]
+exclude-newer = "2 days"
