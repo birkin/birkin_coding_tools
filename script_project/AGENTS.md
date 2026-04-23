@@ -8,7 +8,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 ## Project basics
 
 - Primary language: Python
-- Target runtime: Python 3.12
+- Target runtime: Python 3.12 -- unless a `pyproject.toml` specifies a different version
 - Dependency / execution tool: `uv`
 - Project-root is the directory containing this file (and `.git/`, and `.gitignore`).
 
@@ -28,7 +28,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 
 ### Type hints and imports
 
-- Use Python 3.12 type hints everywhere (functions and important variables).
+- Use Python 3.12 type hints everywhere (functions and important variables). (Unless a `pyproject.toml` specifies a different version.)
 - Prefer builtin generics (e.g., `list[str]`, `dict[str, int]`) over `typing.List` / `typing.Dict`.
 - Prefer PEP 604 unions (e.g., `str | None`) over `Optional[str]`.
 - Avoid `typing` and `annotations` imports unless strictly necessary.
