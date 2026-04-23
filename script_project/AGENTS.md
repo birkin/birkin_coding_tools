@@ -40,6 +40,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
   - `if __name__ == '__main__': main()`
 - Keep `main()` simple: parse args / orchestrate calls only.
 - Put real logic into top-level helper functions and modules (no nested function definitions).
+- Rarely use more than three levels of hierarchy: main() can call helper_A() which can call helper(B) which can, if necessary, can call helper(C) -- but that's it.
 
 ### Functions and control flow
 
