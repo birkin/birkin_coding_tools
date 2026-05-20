@@ -100,6 +100,12 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 - Avoid creating a secondary abstraction layer inside `views.py` (no view-helper utilities); place helpers in `project/app/lib/`.
 
 
+## Front-end change guidance
+
+- When front-end changes are required, use JavaScript only where it is truly required.
+- Prefer updates in CSS, Python code, or Django template code when those can satisfy the behavior or presentation need.
+
+
 ## Tests
 
 - Use the standard library `unittest` framework (not pytest) for non-Django projects.
