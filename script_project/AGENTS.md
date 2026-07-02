@@ -72,6 +72,10 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 
 - inspect the `/ruff.toml` for additional coding directives, such as `max-line-length` and `quote-style`.
 
+### Markdown formatting
+
+- Do not use hard line-breaks in markdown files; let paragraphs wrap naturally.
+
 
 ## Django architecture conventions
 
