@@ -75,6 +75,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 ### Markdown formatting
 
 - Do not use hard line-breaks in markdown files; let paragraphs wrap naturally.
+- When creating a Markdown file with more than three top-level `##` headings, add a table of contents near the top with links to those `##` headings.
 
 
 ## Django architecture conventions
