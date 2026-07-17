@@ -5,12 +5,55 @@ This file defines the canonical coding directives for this repository.
 If other instruction files exist (Copilot, IDE rules, contributor docs) and conflict with this file, follow this file and treat the others as stale.
 
 
+## Table of contents
+
+- [Project basics](#project-basics)
+- [Agent project index](#agent-project-index)
+- [How to run code](#how-to-run-code)
+- [Coding directives (Python)](#coding-directives-python)
+- [Django architecture conventions](#django-architecture-conventions)
+- [Front-end change guidance](#front-end-change-guidance)
+- [Tests](#tests)
+- [Change workflow expectations](#change-workflow-expectations)
+- [If instructions are missing or ambiguous](#if-instructions-are-missing-or-ambiguous)
+
+
 ## Project basics
 
 - Primary language: Python
 - Target runtime: Python 3.12 -- unless a `pyproject.toml` specifies a different version
 - Dependency / execution tool: `uv`
 - Project-root is the directory containing this file (and `.git/`, and `.gitignore`).
+
+
+## Agent project index
+
+Agent -- replace this section via the following prompt:
+
+( -- prompt start -- )
+Goal: add to `usep_indexer_project/AGENTS.md` an "index" of aspects of this webapp that's for you, which might, in a new work-session: 
+- help you understand the project better.
+- help you find things better.
+- help you understand "gotchas"
+
+Context:
+
+- Sometimes in a new work-session I might ask a question that would understandably require searching/examining the codebase, which is fine.
+
+- My thought is that if you could have a sort of "index" -- containing info most useful to you, not necessarily to a human, that might be useful.
+
+Tasks:
+
+- Review in detail the maiin webapp at `usep_indexer_project`
+
+- Review adjacent material in the enclosing "stuff" directory for additional context.
+
+- Update the `usep_indexer_project/AGENTS.md` file with info that might be useful as described in the Context section above.
+
+- Be sure _NOT_ to add anything to the `usep_indexer_project/AGENTS.md` file which is sensitive/private, because this is a public repository.
+
+- Before doing the above tasks -- _if_ you think it would be useful, ask me up to three clarifying question that you think might help you implement this task. Thanks!
+( -- prompt end -- )
 
 
 ## How to run code
