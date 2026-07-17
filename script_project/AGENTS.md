@@ -32,7 +32,7 @@ Agent -- replace this section via the following prompt:
 
 ( -- prompt start -- )
 
-Goal: add to `usep_indexer_project/AGENTS.md` an "index" of aspects of this webapp that's for you, which might, in a new work-session: 
+Goal: add to this `AGENTS.md` file -- replacing this prompt -- an "index" of aspects of this webapp that's for you, which might, in a new work-session: 
 - help you understand the project better.
 - help you find things better.
 - help you understand "gotchas"
@@ -45,13 +45,13 @@ Context:
 
 Tasks:
 
-- Review in detail the maiin webapp at `usep_indexer_project`
+- Review in detail the main webapp for this project.
 
 - Review adjacent material in the enclosing "stuff" directory for additional context.
 
-- Update the `usep_indexer_project/AGENTS.md` file with info that might be useful as described in the Context section above.
+- Update the `AGENTS.md` file with info that might be useful as described in the Context section above.
 
-- Be sure _NOT_ to add anything to the `usep_indexer_project/AGENTS.md` file which is sensitive/private, because this is a public repository.
+- Be sure _NOT_ to add anything to the `AGENTS.md` file which is sensitive/private, because this is a public repository.
 
 - Before doing the above tasks -- _if_ you think it would be useful, ask me up to three clarifying question that you think might help you implement this task. Thanks!
 
