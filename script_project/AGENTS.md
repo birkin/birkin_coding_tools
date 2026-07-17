@@ -31,6 +31,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 Agent -- replace this section via the following prompt:
 
 ( -- prompt start -- )
+
 Goal: add to `usep_indexer_project/AGENTS.md` an "index" of aspects of this webapp that's for you, which might, in a new work-session: 
 - help you understand the project better.
 - help you find things better.
@@ -53,6 +54,7 @@ Tasks:
 - Be sure _NOT_ to add anything to the `usep_indexer_project/AGENTS.md` file which is sensitive/private, because this is a public repository.
 
 - Before doing the above tasks -- _if_ you think it would be useful, ask me up to three clarifying question that you think might help you implement this task. Thanks!
+
 ( -- prompt end -- )
 
 
