@@ -26,38 +26,6 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 - Project-root is the directory containing this file (and `.git/`, and `.gitignore`).
 
 
-## Agent project index
-
-Agent -- replace this section via the following prompt:
-
-( -- prompt start -- )
-
-Goal: add to this `AGENTS.md` file -- replacing this prompt -- an "index" of aspects of this webapp that's for you, which might, in a new work-session: 
-- help you understand the project better.
-- help you find things better.
-- help you understand "gotchas"
-
-Context:
-
-- Sometimes in a new work-session I might ask a question that would understandably require searching/examining the codebase, which is fine.
-
-- My thought is that if you could have a sort of "index" -- containing info most useful to you, not necessarily to a human, that might be useful.
-
-Tasks:
-
-- Review in detail the main webapp for this project.
-
-- Review adjacent material in the enclosing "stuff" directory for additional context.
-
-- Update the `AGENTS.md` file with info that might be useful as described in the Context section above.
-
-- Be sure _NOT_ to add anything to the `AGENTS.md` file which is sensitive/private, because this is a public repository.
-
-- Before doing the above tasks -- _if_ you think it would be useful, ask me up to three clarifying question that you think might help you implement this task. Thanks!
-
-( -- prompt end -- )
-
-
 ## How to run code
 
 - Assume user is in the project-root directory.
@@ -179,6 +147,12 @@ When implementing a change (especially from an issue/task):
 3. Update tests and run: `uv run ./run_tests.py`
 4. If you cannot run tests in your environment, still write/adjust tests and state what you would run.
 
+### Commit messages
+
+- Group related files into logical, focused commits; do not require a separate commit for every file.
+- Keep each commit message brief, with no more than ten words.
+- Write messages in the present tense so they complete the phrase "This commit..." Begin with a fitting verb such as "Adds," "Implements," or "Updates."
+
 
 ## If instructions are missing or ambiguous
 
@@ -188,5 +162,37 @@ When implementing a change (especially from an issue/task):
   - what you tried
   - what you found in the repo
   - a concrete next step (command, file to edit, or minimal decision needed)
+
+
+## Agent project index
+
+Agent -- replace this section via the following prompt:
+
+( -- prompt start -- )
+
+Goal: add to this `AGENTS.md` file -- replacing this prompt -- an "index" of aspects of this webapp that's for you, which might, in a new work-session: 
+- help you understand the project better.
+- help you find things better.
+- help you understand "gotchas"
+
+Context:
+
+- Sometimes in a new work-session I might ask a question that would understandably require searching/examining the codebase, which is fine.
+
+- My thought is that if you could have a sort of "index" -- containing info most useful to you, not necessarily to a human, that might be useful.
+
+Tasks:
+
+- Review in detail the main webapp for this project.
+
+- Review adjacent material in the enclosing "stuff" directory for additional context.
+
+- Update the `AGENTS.md` file with info that might be useful as described in the Context section above.
+
+- Be sure _NOT_ to add anything to the `AGENTS.md` file which is sensitive/private, because this is a public repository.
+
+- Before doing the above tasks -- _if_ you think it would be useful, ask me up to three clarifying question that you think might help you implement this task. Thanks!
+
+( -- prompt end -- )
 
 ---
