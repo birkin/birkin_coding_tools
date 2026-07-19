@@ -8,7 +8,6 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 ## Table of contents
 
 - [Project basics](#project-basics)
-- [Agent project index](#agent-project-index)
 - [How to run code](#how-to-run-code)
 - [Coding directives (Python)](#coding-directives-python)
 - [Django architecture conventions](#django-architecture-conventions)
@@ -16,6 +15,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 - [Tests](#tests)
 - [Change workflow expectations](#change-workflow-expectations)
 - [If instructions are missing or ambiguous](#if-instructions-are-missing-or-ambiguous)
+- [Agent project index](#agent-project-index)
 
 
 ## Project basics
