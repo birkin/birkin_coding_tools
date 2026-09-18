@@ -102,7 +102,7 @@ If other instruction files exist (Copilot, IDE rules, contributor docs) and conf
 
 - Always use function-based views for Django projects. Do not use class-based views.
 - `project/app/views.py` should contain **only** view functions that directly handle URL endpoints.
-- Every view function in `project/app/views.py` should correspond to an entry in `project/config/urls.py`.
+- Every view function in `project/app/views.py` should correspond to an entry in `project/config/urls.py`. And all urls.py endpoints should reference a function in `project/app/views.py`.
 - Views should act as **manager/orchestrator** functions:
   - Parse request input (query params, POST body, files)
   - Perform minimal validation and shaping of inputs
