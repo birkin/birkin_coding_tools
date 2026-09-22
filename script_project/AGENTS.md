@@ -2,6 +2,10 @@
 
 This file defines the canonical coding directives for this repository.
 
+Keep this `AGENTS.md` file at no more than 300 lines, counting blank lines and the final `---`. When adding guidance, shorten or remove repeated material first; keep repository-specific instructions and the project index useful.
+
+General coding directives are appropriate here when they help different developers and agents follow consistent conventions, since contributors may not share global instructions. Keep useful shared guidance within the 300-line limit.
+
 If other instruction files exist (Copilot, IDE rules, contributor docs) and conflict with this file, follow this file and treat the others as stale.
 
 
