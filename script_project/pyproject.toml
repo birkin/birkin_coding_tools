@@ -3,7 +3,7 @@ name = "script-project-template"
 version = "0.0.0"
 description = "A template for python scripts."
 readme = "coming"
-requires-python = ">=3.12,<3.13"
+requires-python = ">=3.12.16,<3.13"
 dependencies = [
     "httpx2~=2.12.0",
     "python-dotenv~=1.2.0",
