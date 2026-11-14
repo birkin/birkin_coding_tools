@@ -202,7 +202,7 @@ When implementing a change (especially from an issue/task):
 
 - Apply these conventions only after the user has authorized a commit under [Commit authorization](#commit-authorization).
 - Group related files into logical, focused commits; do not require a separate commit for every file.
-- Keep each commit message brief, with no more than ten words.
+- Keep each commit message brief, with no more than fifteen words.
 - Write messages in the present tense so they complete the phrase "This commit..." Begin with a fitting verb such as "Adds," "Implements," or "Updates."
 
 
